@@ -1,7 +1,3 @@
-Here is a **professional GitHub README.md** for your project 👇
-
----
-
 # 📡 Smart RFID Attendance System
 
 A complete **IoT-based attendance management system** using **ESP32, RFID (RC522), Google Sheets, and a live web dashboard**. This project enables automated, real-time attendance tracking with minimal infrastructure.
@@ -258,10 +254,3 @@ This project is open-source and available under the MIT License.
 📧 [royalsakib2@gmail.com](mailto:royalsakib2@gmail.com)
 🌐 GitHub: [https://github.com/sadman7202](https://github.com/sadman7202)
 
----
-
-If you want next level upgrade, I can:
-
-* Add **screenshots + UI badges**
-* Make it **portfolio-level README (🔥 recruiters will notice)**
-* Or add **architecture diagram image**
