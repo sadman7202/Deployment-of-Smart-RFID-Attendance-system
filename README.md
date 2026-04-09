@@ -1,4 +1,4 @@
-Optimizing tool selection...**How It Works**
+**How It Works**
 
 This project has three moving parts that work together:
 
