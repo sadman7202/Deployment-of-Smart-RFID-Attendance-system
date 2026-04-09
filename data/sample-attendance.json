@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "uid": "04A1B2C3",
+      "studentName": "Ava Johnson",
+      "date": "2026-04-08",
+      "time": "08:03"
+    },
+    {
+      "uid": "1199F0E7",
+      "studentName": "Liam Patel",
+      "date": "2026-04-08",
+      "time": "08:07"
+    }
+  ]
+}

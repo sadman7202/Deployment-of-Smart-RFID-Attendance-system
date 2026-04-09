@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart RFID Attendance Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="topbar">
+      <div>
+        <strong>Admin Dashboard</strong>
+      </div>
+      <button id="logoutButton" type="button" class="secondary-button" hidden>Logout</button>
+    </section>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ESP32 + RC522 + Google Sheets</p>
+        <h1>Smart RFID Attendance Dashboard</h1>
+        <p class="lede">Live attendance records from your Google Sheet, with fast search, date filtering, and automatic refresh.</p>
+      </div>
+      <div class="status-card">
+        <span class="status-label">System status</span>
+        <strong id="connectionStatus">Connecting...</strong>
+        <small id="lastUpdatedText">Waiting for data</small>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span>Total records</span>
+        <strong id="totalCount">0</strong>
+      </article>
+      <article class="stat-card">
+        <span>Matching records</span>
+        <strong id="visibleCount">0</strong>
+      </article>
+      <article class="stat-card">
+        <span>Last scanned</span>
+        <strong id="lastScannedName">-</strong>
+      </article>
+    </section>
+
+    <section class="controls">
+      <label>
+        <span>Search by student name or UID</span>
+        <input id="searchInput" type="search" placeholder="Search by name or UID">
+      </label>
+      <label>
+        <span>Filter by date</span>
+        <input id="dateInput" type="date">
+      </label>
+      <button id="refreshButton" type="button">Refresh now</button>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Attendance Records</h2>
+        <p>Newest scans appear at the top.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>UID</th>
+              <th>Student Name</th>
+              <th>Date</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="attendanceBody">
+            <tr>
+              <td colspan="4" class="empty-state">Loading attendance records...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

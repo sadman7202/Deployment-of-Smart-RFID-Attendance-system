@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Smart RFID Attendance</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="login-card">
+      <p class="eyebrow">Smart RFID Attendance</p>
+      <h1>Admin Login</h1>
+      <p class="hint">Sign in to view attendance records.</p>
+
+      <form id="loginForm" class="login-form">
+        <label>
+          <span>Username</span>
+          <input id="usernameInput" name="username" type="text" autocomplete="username" required>
+        </label>
+
+        <label>
+          <span>Password</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required>
+        </label>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="message" class="hint" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
